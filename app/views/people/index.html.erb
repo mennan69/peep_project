@@ -1,0 +1,8 @@
+<h1>people</h1>
+
+<!--this displays when no parameter is given in people eg "http://localhost:3000/people/"-->
+
+<% @people.each do |person| %>
+    
+  <li><%=link_to person, person_path(person) %></li>
+<% end %>
